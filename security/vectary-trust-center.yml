@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://www.vectary.com/security/
+url: https://www.vectary.com/security/
+certifications:
+- SOC 2
+- ISO 27001
+compliance:
+- GDPR
+- CCPA
+notes: >-
+  "Security at Vectary" page states Vectary is ISO 27001 certified and SOC 2
+  certified (with links to view both certificates), and complies with GDPR
+  and CCPA. Practices documented: AWS hosting across multiple data centers
+  with continuous backup, network segmentation, TLS + HSTS, encryption of
+  classified data, regular vulnerability scans and penetration tests,
+  incident management process, mandatory security training, and a dedicated
+  Information Security Team. Enterprise plans add SSO and RBAC.
+evidence:
+- source: https://www.vectary.com/security/
+  keywords:
+  - soc 2
+  - iso 27001
+  - gdpr

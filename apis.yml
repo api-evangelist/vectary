@@ -1,8 +1,16 @@
 aid: vectary
 name: Vectary
-description: 'Vectary is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: design-tech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Vectary is a browser-based 3D and augmented reality design platform used to
+  create, collaborate on, and publish interactive 3D content — product
+  configurators, assembly manuals, and immersive presentations — without
+  downloads or code. Serving over four million users across automotive,
+  electronics, manufacturing, and furniture, Vectary embeds projects on any
+  website via iframe, and its Business-plan Model API (VctrModelApi, a
+  JavaScript postMessage wrapper) gives developers programmatic control of
+  embedded scenes: switching variants and materials, two-way events, camera,
+  animations, textures, and GLB/GLTF/FBX/USDZ import/export, with documented
+  e-commerce patterns for Shopify, Webflow, and custom storefronts.
 url: https://raw.githubusercontent.com/api-evangelist/vectary/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +18,56 @@ x-backed-by:
 - eqt-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://vectary.com/website_assets/636cc984003871e3cda597bb/639749cde7938b805b601b13_vectary-3d-design-og.jpg
 tags:
 - Company
 - Design Tech
-apis: []
+- 3D Design
+- Augmented Reality
+- 3D Configurator
+- Product Visualization
+- ECommerce
+apis:
+- aid: vectary:vectary-model-api
+  name: Vectary Model API
+  description: >-
+    JavaScript API for programmatic control of Vectary 3D scenes embedded on
+    websites. The VctrModelApi class (an ES module served from
+    app.vectary.com) wraps postMessage communication with the embedded
+    iframe, exposing async methods for configuration state, variants,
+    materials and textures, two-way events, objects and transforms, camera
+    and view state, animations, raycasting, screenshots, and file
+    import/export. Available on Business plans; scenes are addressed by the
+    Project ID from the embed URL.
+  humanURL: https://help.vectary.com/api/model-api
+  baseURL: https://app.vectary.com
+  tags:
+  - 3D
+  - Configurator
+  - JavaScript
+  - Embed
+  properties:
+  - type: Documentation
+    url: https://help.vectary.com/api/model-api
+  - type: APIReference
+    url: https://help.vectary.com/api/model-api/api-reference
+  - type: GettingStarted
+    url: https://help.vectary.com/api/model-api/quick-start
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +76,50 @@ maintainers:
 common:
 - type: Website
   url: https://www.vectary.com/
+- type: Documentation
+  url: https://help.vectary.com/
+- type: APIReference
+  url: https://help.vectary.com/api/model-api/api-reference
+- type: GettingStarted
+  url: https://help.vectary.com/api/model-api/quick-start
+- type: Support
+  url: https://discord.com/invite/kbfe4SxzMg
+- type: Blog
+  url: https://www.vectary.com/3d-modeling-blog/
+- type: GitHubOrganization
+  url: https://github.com/vectary
+- type: Pricing
+  url: https://www.vectary.com/pricing/
+- type: SignUp
+  url: https://www.vectary.com/signup/
+- type: TermsOfService
+  url: https://www.vectary.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.vectary.com/privacy-policy/
+- type: ChangeLog
+  url: changelog/vectary-changelog.yml
+- type: LLMsTxt
+  url: llms/vectary-llms.txt
+- type: Packages
+  url: packages/vectary-packages.yml
+- type: SDKs
+  url: packages/vectary-packages.yml
+- type: Components
+  url: components/vectary-components.yml
+- type: Authentication
+  url: authentication/vectary-authentication.yml
+- type: DomainSecurity
+  url: security/vectary-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/vectary-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.vectary.com/security/
+- type: TrustCenter
+  url: security/vectary-trust-center.yml
+- type: Compliance
+  url: https://www.vectary.com/security/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

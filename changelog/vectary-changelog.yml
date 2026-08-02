@@ -1,0 +1,57 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.vectary.com/changelog
+docs: https://help.vectary.com/changelog
+description: >-
+  Structured capture of Vectary's dated release notes. Vectary publishes
+  monthly changelog pages in its GitBook help center (one page per month,
+  with dated releases inside each, split into Improvements / Bug fixes /
+  Details tabs). Until March 2025 release notes were published only on the
+  official Discord (#releases); release notes are still cross-posted to
+  Discord. This artifact records the recent window; the live changelog is
+  the source of truth.
+versioning:
+  scheme: monthly release-note pages with dated releases (no public API version numbers)
+  current: May 2026
+  discord: https://discord.com/invite/kbfe4SxzMg
+entries:
+  - date: '2026-05-20'
+    page: https://help.vectary.com/changelog/may-2026
+    latest: true
+    additions:
+      - AI image-to-3D models added
+    fixes:
+      - XLOOKUP function fix in configurator expressions
+      - Append parameters fix in the Link interaction action
+  - date: '2026-05-06'
+    page: https://help.vectary.com/changelog/may-2026
+    additions:
+      - Gaussian Splats (.PLY) import support
+      - Right-click context menu for importing projects from the Workspace tab
+      - Improved normal handling during mesh import
+    fixes:
+      - Linked materials no longer become unlinked in exported models
+      - Smooth threshold, Point light slider, and timeline display fixes
+  - date: '2026-02-20'
+    page: https://help.vectary.com/changelog/february-2026
+    additions:
+      - Boolean modifier now supports animations and dynamic changes in the viewer
+      - New Projection type for applying Decals to objects
+      - WebP import format support
+    fixes:
+      - Background color updates instantly when changed via variable
+      - Interaction prompt hidden when switching to WebXR experience
+      - Floating UI Materials element click responsiveness fix
+history:
+  - {month: 'May 2026', url: 'https://help.vectary.com/changelog/may-2026'}
+  - {month: 'February 2026', url: 'https://help.vectary.com/changelog/february-2026'}
+  - {month: 'January 2026', url: 'https://help.vectary.com/changelog/january-2026'}
+  - {month: 'November 2025', url: 'https://help.vectary.com/changelog/november-2025'}
+  - {month: 'October 2025', url: 'https://help.vectary.com/changelog/october-2025'}
+  - {month: 'September 2025', url: 'https://help.vectary.com/changelog/september-2025'}
+  - {month: 'August 2025', url: 'https://help.vectary.com/changelog/august-2025'}
+  - {month: 'July 2025', url: 'https://help.vectary.com/changelog/july-2025'}
+  - {month: 'June 2025', url: 'https://help.vectary.com/changelog/june-2025'}
+  - {month: 'May 2025', url: 'https://help.vectary.com/changelog/may-2025'}
+  - {month: 'April 2025', url: 'https://help.vectary.com/changelog/april-2025'}
+  - {month: 'March 2025', url: 'https://help.vectary.com/changelog/march-2025'}

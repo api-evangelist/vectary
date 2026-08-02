@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Vectary web,
+  app, and docs hosts. Status is the HTTP code observed at fetch time
+  (2026-07-21). No well-known documents were found on any host — every probe
+  returned 404, so no raw files were saved and no WellKnown pointer is wired.
+hosts:
+  - host: https://www.vectary.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://app.vectary.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://help.vectary.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+    note: >-
+      help.vectary.com does publish /llms.txt (200) — captured verbatim at
+      llms/vectary-llms.txt — and serves markdown for any docs page by
+      appending .md, plus a GitBook ?ask= query interface for agents.

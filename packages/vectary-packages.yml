@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=vectary
+description: >-
+  First-party Vectary client libraries. Vectary's primary developer surface is
+  the Model API, a browser JavaScript library (VctrModelApi) served directly
+  from app.vectary.com rather than a package registry — it wraps postMessage
+  communication with an embedded Vectary iframe. Two supporting scripts are
+  published on npm under the @vctr-libs-public scope by Vectary staff. No
+  first-party packages were found on PyPI (404), Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, or crates.io.
+packages:
+  - language: javascript
+    registry: hosted-script
+    name: VctrModelApi (Model API)
+    url: https://app.vectary.com/studio-lite/scripts/api.js
+    docs: https://help.vectary.com/api/model-api
+    install: 'import { VctrModelApi } from "https://app.vectary.com/studio-lite/scripts/api.js"'
+    official: true
+    note: >-
+      ES module served by Vectary; requires a Business plan. Controls embedded
+      3D scenes (variants, materials, events, camera, animations, import/export).
+  - language: javascript
+    registry: npm
+    name: "@vctr-libs-public/customer-gtm"
+    url: https://www.npmjs.com/package/@vctr-libs-public/customer-gtm
+    install: npm install @vctr-libs-public/customer-gtm
+    official: true
+    note: Vectary and Google Tag Manager communication bridge (published by Vectary staff).
+  - language: javascript
+    registry: npm
+    name: "@vctr-libs-public/webflow-scripts"
+    url: https://www.npmjs.com/package/@vctr-libs-public/webflow-scripts
+    install: npm install @vctr-libs-public/webflow-scripts
+    official: true
+    note: Vectary scripts for Webflow embeds — authorisation and logging (published by Vectary staff).

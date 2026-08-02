@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.vectary.com/api/model-api
+docs: https://help.vectary.com/api/model-api/quick-start
+description: >-
+  Access model for Vectary's developer surface. Vectary publishes no REST API
+  and no OpenAPI, so there are no securitySchemes to derive — this profile is
+  captured from the Model API documentation. Access to the Model API is
+  plan-gated rather than credential-gated: the VctrModelApi browser script is
+  provided to Business-plan workspaces, and an embed is addressed by its
+  public Project ID (the UUID in the https://app.vectary.com/p/<id> embed
+  URL). No API keys, tokens, or OAuth flows are documented for the Model API.
+  Platform account access supports SSO and RBAC on Enterprise plans.
+summary:
+  types: []
+  model: plan-gated embed script (no API credentials)
+schemes:
+  - name: business-plan-gate
+    type: plan-gated
+    description: >-
+      Model API availability requires a Business plan workspace; the api.js
+      script (VctrModelApi) is initialized against the iframe's DOM id and
+      communicates with the embedded scene over postMessage. The Project ID
+      from the share/embed URL identifies the scene.
+    docs: https://help.vectary.com/api/model-api
+enterprise:
+  sso: Single sign-on (SSO) available on Enterprise plans
+  rbac: Role-Based Access Control (RBAC) available on Enterprise plans
+  source: https://www.vectary.com/security/

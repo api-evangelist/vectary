@@ -1,0 +1,53 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.vectary.com/api/model-api
+description: >-
+  Vectary's embeddable, client-side surfaces — the product IS an embeddable
+  3D layer. Projects are embedded on websites as iframes served from
+  app.vectary.com and controlled from the host page through the Model API
+  (VctrModelApi) postMessage wrapper. In-scene 2D UI (Floating UI elements
+  and Hotspots) is configured in Vectary Studio and can trigger or receive
+  events from the host page. Distinct from the client libraries catalogued
+  in packages/vectary-packages.yml.
+docs:
+  - https://help.vectary.com/api/model-api
+  - https://help.vectary.com/documentation/sharing-exporting-embedding
+  - https://help.vectary.com/documentation/3d-configurator/floating-ui
+libraries:
+  - name: VctrModelApi
+    url: https://app.vectary.com/studio-lite/scripts/api.js
+    purpose: ES module that connects the host page to an embedded Vectary iframe (Business plan); catalogued in packages/
+families:
+  embedded_viewer:
+    description: The core embeddable 3D viewer/configurator surface.
+    components:
+      - name: Project embed (iframe)
+        description: >-
+          Any Vectary project embeds via an iframe at
+          https://app.vectary.com/p/<PROJECT_ID>; works in websites and
+          platforms that accept embeds (Webflow, Shopify, custom code).
+      - name: 3D configurator embed
+        description: >-
+          Embedded scenes carry Studio-built configurator logic — Variants,
+          Materials, Interactions (triggers/conditions/actions), Variables &
+          expressions — controllable from the host page via the Model API.
+      - name: AR / WebXR viewing
+        description: >-
+          Embedded projects can hand off to Augmented Reality (WebAR) on
+          mobile and WebXR (beta) headset experiences.
+  in_scene_ui:
+    description: 2D UI elements living inside the 3D scene, built in Studio (no code).
+    components:
+      - {name: Floating UI, description: 'In-scene UI element system: container, text, image, button, slider, input, color, embed, materials (UI), variants (UI).'}
+      - {name: Hotspots, description: Anchored in-scene markers that can trigger events and reveal content.}
+  ecommerce_integrations:
+    description: Documented embed + Model API patterns for online stores.
+    components:
+      - {name: Webflow integration, docs: 'https://help.vectary.com/api/model-api/ecommerce/webflow'}
+      - {name: Shopify integration, docs: 'https://help.vectary.com/api/model-api/ecommerce/shopify'}
+      - {name: Custom code integration, docs: 'https://help.vectary.com/api/model-api/ecommerce/custom-code'}
+  design_tool_plugins:
+    description: First-party plugins for design tools.
+    components:
+      - {name: Vectary Plugin for Figma, docs: 'https://help.vectary.com/documentation/other/vectary-plugin-for-figma'}
+      - {name: Figma frames import, docs: 'https://help.vectary.com/documentation/importing/figma-frames-import'}
